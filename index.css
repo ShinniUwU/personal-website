@@ -375,12 +375,15 @@ width: 80%;
         height: 350px;
         width: 350px;
     }
+    
 }
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
+        
     }
 }
+
 @media (max-width: 947px){
     .menu-btn{
         display: block;
@@ -468,7 +471,7 @@ width: 80%;
         font-size: 20px;
         
     }
-    .services .serv-content .card, .skills .skills-content .column{
+    .services .serv-content .card{
         width: 100%;
     }
 }
@@ -485,13 +488,6 @@ width: 80%;
     }
     .contact .right form .fields{
         flex-direction: column;
-    }
-    .contact .right form .name,
-    .contact .right form .email{
-        margin: 0;
-    }
-    .right form .error-box{
-       width: 150px;
     }
     .scroll-up-btn{
         right: 15px;
