@@ -32,6 +32,24 @@
      justify-content: space-between;
 }
 
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(113, 42, 84, 0.9);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    z-index: 9999;
+}
+
+.notification.show {
+    opacity: 1;
+}
 
 .navbar .menu li{
     list-style-type: none;

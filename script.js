@@ -48,14 +48,6 @@ $(document).ready(function(){
         loop: true
     });
    
-
-    $('a').on('click', function() {
-        if(this.getAttribute("href").charAt(0) == "") {
-         alert('Feel free to add me on discord 𝖘𝖍𝖎𝖓𝖓𝖎#2806');
-       }
-       
-    });
-
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
     
@@ -68,5 +60,6 @@ $(document).ready(function(){
         delay: 0, // values from 0 to 3000, with step 50ms
         duration: 1000 // values from 0 to 3000, with step 50ms
       });
+      
 
 });

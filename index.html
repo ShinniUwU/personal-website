@@ -24,7 +24,28 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services & Skills</a></li>
-            <li><a href="" onclick="javascript:copyText('shinni_')">Discord</a></li>
+            <li><a href="" id="discordLink">Discord</a></li>
+            <script>
+                  document.getElementById('discordLink').addEventListener('click', function(event) {
+        event.preventDefault();
+        copyToClipboard('shinni_');
+              function copyToClipboard(text) {
+    navigator.clipboard.writeText(text);
+    showNotification('Discord username copied to clipboard: ' + text);
+}
+
+function showNotification(message) {
+    var notification = document.getElementById('notification');
+    notification.innerHTML = message;
+    notification.classList.add('show');
+
+    setTimeout(function () {
+        notification.classList.remove('show');
+    }, 3000); // Hide the notification after 3 seconds
+}
+})
+
+            </script>
             </ul>
             <div class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -33,6 +54,7 @@
             </div>
             </nav>
         </div>
+        <div id="notification" class="notification"></div>
     <!-- home section -->
     <section class="home" id="home" data-aos="fade-in">
     <div class="max-width">
