@@ -68,7 +68,7 @@
     font-weight: 600;
 }
 .navbar .logo a span{
-    color:#712a54;
+    color: rgb(212, 139, 182);
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
